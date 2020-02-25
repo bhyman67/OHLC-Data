@@ -1,3 +1,4 @@
+# Here is a comment
 import alpaca_trade_api as tradeapi
 import pandas as pd
 import datetime
@@ -14,7 +15,7 @@ api = tradeapi.REST()
 
 # Get the list of all ticker symbols in alpaca
 #   -> Will need to make an api call for all active assets
-assetFilter = ["AAPL","TSLA","F"]
+assetFilter = [] # ["AAPL","TSLA","F"]
 assets = api.list_assets(status="active") 
 if len(assetFilter) > 0:
     tickerSymbols = [asset.symbol for asset in assets if asset.symbol in assetFilter]

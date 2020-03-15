@@ -1,4 +1,4 @@
-# <p align="center"> OHLC Data Analysis <p>
+# <p align="center"> OHLC Data Analysis </p>
 
 # 
 
